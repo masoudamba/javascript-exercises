@@ -316,6 +316,7 @@ var falsyThing=null;
 if(falsyThing){
     console.log("falsyThing is not falsy")
 };
+
             ////////////////////////////////////////////////////////////////////
 
             expect(typeof falsyThing).to.equal("object");
