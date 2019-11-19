@@ -11,7 +11,10 @@ describe("numbers", function() {
     describe("Is finite number", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////////
-            // ✏️ ADD CODE HERE. USE THE STANDARD LIB! ✏️
+            function isFiniteNumber(number){
+                return Number.isFinite
+            }
+            
 
             ////////////////////////////////////////////////////////////////////////
 

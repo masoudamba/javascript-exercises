@@ -41,7 +41,7 @@ function myFunction() {};
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
-           const otherFunction=myFunctiona;
+           const otherFunction=myFunction;
             ////////////////////////////////////////////////////////////////////
 
             if (myFunction !== otherFunction) {
@@ -58,7 +58,7 @@ function myFunction() {};
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ EDIT LINE BELOW ✏️
-            myFunction(); // why is myFunction not callable?
+            otherFunction(); // why is myFunction not callable?
             ////////////////////////////////////////////////////////////////////
         });
     });
@@ -97,7 +97,9 @@ const answer=getContext();
             // and 'answerThirdResult' with the correct results.
             // If you call getContext() here, you're a cheater! :)
             // ✏️ ADD CODE HERE ✏️
-
+            const answerFirstResult=undefined;
+            const answerSecondResult=context;
+            const answerThirdResult=undefined;
             ////////////////////////////////////////////////////////////////////
 
             // First we call the function without an explicit context
@@ -135,7 +137,8 @@ const answer=getContext();
             // and 'answerSecondResult' with the correct results.
             // If you call getContext() here, you're a cheater! :)
             // ✏️ ADD CODE HERE ✏️
-
+            const answerFirstResult=object;
+            const answerSecondResult=differentObject;
             ////////////////////////////////////////////////////////////////////
 
             // First we call the function on an object
@@ -166,7 +169,8 @@ const answer=getContext();
             // You're not allowed to define a new function here.
             // If you call getContext() here, you're a cheater! :)
             // ✏️ ADD CODE HERE ✏️
-
+           getContext= getContext.bind(differentContext);
+        
             ////////////////////////////////////////////////////////////////////
 
             const result = getContext.call(context);
